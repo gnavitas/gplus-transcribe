@@ -1,0 +1,33 @@
+{
+    "manifest_version": 3,
+    "name": "Manga/Manhwa Translator",
+    "version": "1.0",
+    "description": "Translate raw manga and manhwa pages using Gemini AI.",
+    "permissions": [
+        "activeTab",
+        "contextMenus",
+        "storage"
+    ],
+    "host_permissions": [
+        "https://generativelanguage.googleapis.com/*"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ],
+            "css": [
+                "content.css"
+            ]
+        }
+    ]
+}
