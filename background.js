@@ -1,4 +1,4 @@
-const API_KEY = 'AIzaSyBdN28BicbtykitIiOW1pDKN3u9q-C67Yg';
+const API_KEY = '-C67Yg';
 
 chrome.runtime.onInstalled.addListener(() => {
     chrome.contextMenus.create({
